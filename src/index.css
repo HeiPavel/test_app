@@ -1,13 +1,77 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 32, 44);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(252, 253, 253);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+header a:hover {
+    color: rgb(74, 192, 226);
+    text-shadow: 0 0 10px rgb(74, 192, 226);
+}
+
+header a.active {
+    color: rgb(100, 224, 174);
+    text-decoration: underline;
+}
+
+header a.active:hover {
+    text-shadow: unset;
+}
+
+main {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    color:rgb(252, 253, 253);
+    font-size: 1.2rem;
+}
+
+article {
+    width: 50%;
+}
+
+article h2 {
+    text-align: center;
+    color: rgb(100, 224, 174);
+}
+
+article ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+}
+
+article li {
+    margin-bottom: 1rem;
+}
+
+article span {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1200px) {
+    article {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    article {
+        width: 90%;
+    }
 }
